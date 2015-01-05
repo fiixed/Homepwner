@@ -23,8 +23,12 @@
     // Create an ItemsViewController
     ItemsViewController *itemsViewController = [[ItemsViewController alloc] init];
     
-    // Place ItemsViewController table view in the window heirachy
-    self.window.rootViewController = itemsViewController;
+    // Create an instance of a UINavigation Controller
+    // its stack contains only itemsViewController
+    UINavigationController *navcontroller = [[UINavigationController alloc] initWithRootViewController:itemsViewController];
+    
+    // Place navigation controller's view in the window hierachy
+    self.window.rootViewController = navcontroller;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

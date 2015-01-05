@@ -15,6 +15,8 @@
 		0587A1B81A56465C003DFF7F /* ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587A1B71A56465C003DFF7F /* ItemsViewController.m */; };
 		0587A1BB1A564880003DFF7F /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587A1BA1A564880003DFF7F /* Item.m */; };
 		0587A1BE1A564927003DFF7F /* ItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587A1BD1A564927003DFF7F /* ItemStore.m */; };
+		05FCB2B81A5A3A7E0005683D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FCB2B61A5A3A7E0005683D /* DetailViewController.m */; };
+		05FCB2B91A5A3A7E0005683D /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05FCB2B71A5A3A7E0005683D /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,9 @@
 		0587A1BA1A564880003DFF7F /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		0587A1BC1A564927003DFF7F /* ItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemStore.h; sourceTree = "<group>"; };
 		0587A1BD1A564927003DFF7F /* ItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemStore.m; sourceTree = "<group>"; };
+		05FCB2B51A5A3A7E0005683D /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		05FCB2B61A5A3A7E0005683D /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		05FCB2B71A5A3A7E0005683D /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +94,9 @@
 				0587A1951A564465003DFF7F /* AppDelegate.m */,
 				0587A1B61A56465C003DFF7F /* ItemsViewController.h */,
 				0587A1B71A56465C003DFF7F /* ItemsViewController.m */,
+				05FCB2B51A5A3A7E0005683D /* DetailViewController.h */,
+				05FCB2B61A5A3A7E0005683D /* DetailViewController.m */,
+				05FCB2B71A5A3A7E0005683D /* DetailViewController.xib */,
 				0587A1BF1A564931003DFF7F /* Model */,
 				0587A19D1A564465003DFF7F /* Images.xcassets */,
 				0587A19F1A564465003DFF7F /* LaunchScreen.xib */,
@@ -216,6 +224,7 @@
 			files = (
 				0587A1A11A564465003DFF7F /* LaunchScreen.xib in Resources */,
 				0587A19E1A564465003DFF7F /* Images.xcassets in Resources */,
+				05FCB2B91A5A3A7E0005683D /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +247,7 @@
 				0587A1961A564465003DFF7F /* AppDelegate.m in Sources */,
 				0587A1931A564465003DFF7F /* main.m in Sources */,
 				0587A1BE1A564927003DFF7F /* ItemStore.m in Sources */,
+				05FCB2B81A5A3A7E0005683D /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +430,7 @@
 				0587A1B21A564466003DFF7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0587A1B31A564466003DFF7F /* Build configuration list for PBXNativeTarget "HomepwnerTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +439,7 @@
 				0587A1B51A564466003DFF7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

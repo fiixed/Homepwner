@@ -41,6 +41,7 @@
     self = [super init];
     if (self) {
         _privateItems = [[NSMutableArray alloc] init];
+        [_privateItems addObject:@"No more items!"];
     }
     return self;
 }
@@ -54,9 +55,30 @@
 {
     Item *item = [[Item alloc] init];
     
-    [self.privateItems addObject:item];
+    [self.privateItems insertObject:item atIndex:0];
+    NSLog(@"%@", self.privateItems);
     
     return item;
+}
+
+- (void)removeItem:(Item *)item
+{
+    [self.privateItems removeObjectIdenticalTo:item];
+}
+
+- (void)moveItemAtIndex:(NSUInteger)fromIndex toIndex:(NSUInteger)toIndex
+{
+    if (fromIndex == toIndex) {
+        return;
+    }
+    // Get pointer to object being moved so you can reinsert it
+    Item *item = self.privateItems[fromIndex];
+    
+    // Remove item from array
+    [self.privateItems removeObjectAtIndex:fromIndex];
+    
+    // Insert item into array at new location
+    [self.privateItems insertObject:item atIndex:toIndex];
 }
 
 @end
