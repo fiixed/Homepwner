@@ -135,7 +135,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    DetailViewController *detailViewController = [[DetailViewController alloc] init];
+    DetailViewController *detailViewController = [[DetailViewController alloc] initForNewItem:NO];
     
     NSArray *items = [[ItemStore sharedStore] allItems];
     Item *selectedItem = items[indexPath.row];
@@ -155,14 +155,20 @@
    // Create a new Item and add it to the store
     Item *item = [[ItemStore sharedStore] createItem];
     
-    // Figure out where that item is in the array
-    NSInteger lastRow = [[[ItemStore sharedStore] allItems] indexOfObject:item];
+    DetailViewController *detailViewController = [[DetailViewController alloc] initForNewItem:YES];
     
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:lastRow inSection:0];
+    detailViewController.item = item;
     
-    // Insert a new row into the table
-    [self.tableView insertRowsAtIndexPaths:@[indexPath]
-                          withRowAnimation:UITableViewRowAnimationTop];
+    detailViewController.dismissBlock = ^{
+        [self.tableView reloadData];
+    };
+    
+    UINavigationController *navcontroller = [[UINavigationController alloc] initWithRootViewController:detailViewController];
+    navcontroller.modalPresentationStyle = UIModalPresentationFormSheet;
+//    navcontroller.modalTransitionStyle = UIModalTransitionStylePartialCurl;
+    
+    [self presentViewController:navcontroller animated:YES completion:NULL];
+    
 }
 
 
