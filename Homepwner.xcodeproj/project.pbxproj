@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		053AEE3E1A5CA15A00055CB9 /* ImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 053AEE3D1A5CA15A00055CB9 /* ImageStore.m */; };
+		05631F391A65C67D002FD1BB /* bubble-rect.png in Resources */ = {isa = PBXBuildFile; fileRef = 05631F351A65C67D002FD1BB /* bubble-rect.png */; };
+		05631F3A1A65C67D002FD1BB /* bubble-rect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05631F361A65C67D002FD1BB /* bubble-rect@2x.png */; };
+		05631F3B1A65C67D002FD1BB /* bubble-triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 05631F371A65C67D002FD1BB /* bubble-triangle.png */; };
+		05631F3C1A65C67D002FD1BB /* bubble-triangle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05631F381A65C67D002FD1BB /* bubble-triangle@2x.png */; };
+		05631F3F1A65C71D002FD1BB /* BubbleBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05631F3E1A65C71D002FD1BB /* BubbleBackgroundView.m */; };
 		0587A1931A564465003DFF7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587A1921A564465003DFF7F /* main.m */; };
 		0587A1961A564465003DFF7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587A1951A564465003DFF7F /* AppDelegate.m */; };
 		0587A19E1A564465003DFF7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0587A19D1A564465003DFF7F /* Images.xcassets */; };
@@ -33,6 +38,12 @@
 /* Begin PBXFileReference section */
 		053AEE3C1A5CA15A00055CB9 /* ImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageStore.h; sourceTree = "<group>"; };
 		053AEE3D1A5CA15A00055CB9 /* ImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageStore.m; sourceTree = "<group>"; };
+		05631F351A65C67D002FD1BB /* bubble-rect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-rect.png"; sourceTree = "<group>"; };
+		05631F361A65C67D002FD1BB /* bubble-rect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-rect@2x.png"; sourceTree = "<group>"; };
+		05631F371A65C67D002FD1BB /* bubble-triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-triangle.png"; sourceTree = "<group>"; };
+		05631F381A65C67D002FD1BB /* bubble-triangle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-triangle@2x.png"; sourceTree = "<group>"; };
+		05631F3D1A65C71D002FD1BB /* BubbleBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleBackgroundView.h; sourceTree = "<group>"; };
+		05631F3E1A65C71D002FD1BB /* BubbleBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleBackgroundView.m; sourceTree = "<group>"; };
 		0587A18D1A564465003DFF7F /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0587A1911A564465003DFF7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0587A1921A564465003DFF7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -100,6 +111,12 @@
 				05FCB2B51A5A3A7E0005683D /* DetailViewController.h */,
 				05FCB2B61A5A3A7E0005683D /* DetailViewController.m */,
 				05FCB2B71A5A3A7E0005683D /* DetailViewController.xib */,
+				05631F3D1A65C71D002FD1BB /* BubbleBackgroundView.h */,
+				05631F3E1A65C71D002FD1BB /* BubbleBackgroundView.m */,
+				05631F351A65C67D002FD1BB /* bubble-rect.png */,
+				05631F361A65C67D002FD1BB /* bubble-rect@2x.png */,
+				05631F371A65C67D002FD1BB /* bubble-triangle.png */,
+				05631F381A65C67D002FD1BB /* bubble-triangle@2x.png */,
 				0587A1BF1A564931003DFF7F /* Model */,
 				0587A19D1A564465003DFF7F /* Images.xcassets */,
 				0587A19F1A564465003DFF7F /* LaunchScreen.xib */,
@@ -228,6 +245,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0587A1A11A564465003DFF7F /* LaunchScreen.xib in Resources */,
+				05631F3B1A65C67D002FD1BB /* bubble-triangle.png in Resources */,
+				05631F3A1A65C67D002FD1BB /* bubble-rect@2x.png in Resources */,
+				05631F391A65C67D002FD1BB /* bubble-rect.png in Resources */,
+				05631F3C1A65C67D002FD1BB /* bubble-triangle@2x.png in Resources */,
 				0587A19E1A564465003DFF7F /* Images.xcassets in Resources */,
 				05FCB2B91A5A3A7E0005683D /* DetailViewController.xib in Resources */,
 			);
@@ -247,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05631F3F1A65C71D002FD1BB /* BubbleBackgroundView.m in Sources */,
 				0587A1BB1A564880003DFF7F /* Item.m in Sources */,
 				0587A1B81A56465C003DFF7F /* ItemsViewController.m in Sources */,
 				053AEE3E1A5CA15A00055CB9 /* ImageStore.m in Sources */,

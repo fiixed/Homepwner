@@ -10,6 +10,7 @@
 #import "Item.h"
 #import "ItemStore.h"
 #import "ImageStore.h"
+#import "BubbleBackgroundView.h"
 
 @interface DetailViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate, UIPopoverControllerDelegate>
 
@@ -176,6 +177,7 @@
     if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
         // Create a new popover controller that will display the imagePicker
         self.imagePickerPopover = [[UIPopoverController alloc] initWithContentViewController:imagePicker];
+        self.imagePickerPopover.popoverBackgroundViewClass = [BubbleBackgroundView class];
         self.imagePickerPopover.delegate = self;
         
         // Display the popover controller; sender is the camera bar button item
