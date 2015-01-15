@@ -165,6 +165,7 @@
     
     UINavigationController *navcontroller = [[UINavigationController alloc] initWithRootViewController:detailViewController];
     navcontroller.modalPresentationStyle = UIModalPresentationFormSheet;
+ 
 //    navcontroller.modalTransitionStyle = UIModalTransitionStylePartialCurl;
     
     [self presentViewController:navcontroller animated:YES completion:NULL];
